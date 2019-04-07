@@ -1,0 +1,28 @@
+{
+  "name": "CDComputo-site",
+  "version": "1.0.0",
+  "description": "CDComputo website",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcf92/CDComputo-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcf92/CDComputo-site/issues"
+  },
+  "homepage": "https://github.com/mcf92/CDComputo-site#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "material-components-web": "^1.1.0",
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.3"
+  }
+}

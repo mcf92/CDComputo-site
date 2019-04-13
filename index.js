@@ -1,3 +1,2 @@
-import jquery from "jquery";
-
-export default (window.$ = window.jQuery = jquery);
+import './source/js/jquery';
+import './source/js/navbar';

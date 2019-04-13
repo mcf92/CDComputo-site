@@ -1,0 +1,49 @@
+.text-align {
+  &--center {
+    text-align: center;
+  }
+  &--left {
+    text-align: left;
+  }
+}
+
+.text-family {
+  &--titles {
+    font-family:  $font-family-titles-regular;
+  }
+}
+
+.text-transform {
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  &--primary-icon {
+    background: $gradient-icon;
+    font-size: $font-size-h2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &--primary-title {
+    font-weight: bold;
+    color: $grey-light;
+    font-size: $font-size-h6;
+    text-transform: uppercase;
+    font-family: $font-family-titles-bold;
+  }
+  &--primary-description {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $font-family-titles-regular;
+  }
+  &-color {
+    &--grey-light {
+      color: $grey-light;
+    }
+    &--secondary {
+      color: $secondary-color !important;
+    }
+  }
+}

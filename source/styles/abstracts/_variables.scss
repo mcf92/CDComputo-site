@@ -16,6 +16,7 @@ $dark: #010029;
 $white: #FFF;
 $grey: #767676;
 $grey-light: #6B6B6B;
+$grey-font: #5F5F5F;
 $grey-background: #f9f9f9;
 $gradient-background: radial-gradient(circle at left bottom, $primary-color 0%, $secondary-color 70%) no-repeat !important;
 $gradient-icon: -webkit-linear-gradient($secondary-color, $primary-color);
@@ -33,6 +34,7 @@ $screen-extra-large:              	2000px!default;
 $font-family-titles-light:          "TechnicalForest-Light", sans-serif;
 $font-family-titles-regular:        "TechnicalForest-Regular", sans-serif;
 $font-family-titles-bold:           "TechnicalForest-Bold", sans-serif;
+$font-family-secondary:             "Quicksand", sans-serif;
 
 $font-size-h1:                      36px;
 $font-size-h2:                      30px;

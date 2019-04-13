@@ -38,9 +38,20 @@
     font-size: 20px;
     font-family: $font-family-titles-regular;
   }
+  &-font-family {
+    &--secondary {
+      font-family: $font-family-secondary;
+    }
+  }
   &-color {
     &--grey-light {
       color: $grey-light;
+    }
+    &--primary {
+      color: $primary-color !important;
+    }
+    &--grey {
+      color: $grey-font;
     }
     &--secondary {
       color: $secondary-color !important;

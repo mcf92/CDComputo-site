@@ -12,7 +12,7 @@
 	width: 100vw;
 	height: 160px;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 3fr;
 	position: fixed;
 	z-index: 10;
 	transition: all 0.3s;
@@ -47,9 +47,18 @@
 		list-style: none;
 		padding: 0px;
 	}
-
+	&__separator {
+		padding: 5px 0px !important;
+		background: #23a0ac;
+	}
 	&__list-item {
 		margin-left: 20px;
+		padding: 5px;
+		transition: 0.3s ease-in-out;
+		&:hover {
+			background-color: #f5f5f5;
+			border-radius: 2px;
+		}
 		a {
 			height: 20px;
 			display: block;
@@ -138,6 +147,7 @@
 			visibility: hidden;
 			margin-left: 0;
 			transition: all 0.3s 0.1s;
+			padding: 0px;
 			&:first-child {
 				margin-top: 20px;
 			}

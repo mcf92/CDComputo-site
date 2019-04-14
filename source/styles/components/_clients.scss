@@ -1,0 +1,63 @@
+.clients {
+  overflow: hidden;
+  &__list-names {
+    list-style: none;
+    margin-top: 60px;
+    position: relative;
+    height: 80vh;
+    max-height: 600px;
+    top: 0 !important;
+    &-btn {
+      color: $secondary-color;
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -35px;
+      bottom: 73px;
+      cursor: pointer;
+      i {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+    .item {
+      margin-bottom: 60px;
+      a {
+        white-space: nowrap;
+        font-size: 48px;
+        font-family: $font-family-titles-bold;
+        color: $white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        transition: .4s all;
+        text-decoration: none;
+        &:hover {
+          color: $dark;
+          cursor: pointer;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  &__owl-carousel-item {
+    img {
+      width: 20% !important;
+    }
+    h1 {
+      font-size: 48px;
+    }
+    p {
+      color: $grey-light;
+    }
+  }
+}
+
+.wipe-in {
+  opacity: 1;
+  transition: transform 3s, opacity 3s;
+  transform: translateY(-100%);
+}
+
+.wipe-out {
+  opacity: 0;
+  transition: transform 2700ms, opacity 2700ms;
+  transform: translateY(-200%);
+}

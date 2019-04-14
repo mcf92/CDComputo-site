@@ -1,0 +1,41 @@
+.brand-list {
+  padding: 15px 0;
+  border-bottom: 3px solid $secondary-color;
+  position: relative;
+  &__logos {
+    margin-left: 30px;
+    img {
+      padding: 0 30px;
+      max-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__separator {
+    line-height: 30px;
+    padding: 0;
+    border-right: none;
+    text-align: center;
+    font-family: $font-family-secondary;
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 1023px) {
+    &__separator {
+      padding: 0 60px 0 0;
+      border-right: 2px solid $separator-color;
+      text-align: left;
+    }
+    &__logos {
+      img {
+        margin-bottom: 0;
+      }
+    }
+    &:after {
+      content: "";
+      background: $secondary-color;
+      position: absolute;
+      height: 5px;
+      width: 100px;
+      top: 0;
+    }
+  }
+}

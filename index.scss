@@ -1,5 +1,4 @@
 // abstracts
-// @import 'source/font/MyFontsWebfontsKit.css';
 @import 'source/styles/abstracts/variables';
 
 // base
@@ -7,10 +6,18 @@
 @import 'source/styles/base/flex';
 @import 'source/styles/base/font';
 @import 'source/styles/base/typography';
+@import 'source/styles/base/container';
+@import 'source/styles/base/position';
+
 
 // components
 @import 'source/styles/components/navbar';
 @import 'source/styles/components/button';
+@import 'source/styles/components/subscription-list';
+@import 'source/styles/components/brand-list';
+@import 'source/styles/components/ecommerce-banner';
+@import 'source/styles/components/clients';
 
 // layout
 @import 'source/styles/layout/home';
+@import 'source/styles/layout/home-services';

@@ -26,10 +26,12 @@ $( () => {
 	$('#menu-toggle').on('click', () => {
 		$('#menu-toggle').toggleClass('closeMenu');
 		$('ul').toggleClass('showMenu');
+		$('.navbar').toggleClass('open-menu');
 
 		$('li').on('click', () => {
 			$('ul').removeClass('showMenu');
 			$('#menu-toggle').removeClass('closeMenu');
+			$('.navbar').removeClass('open-menu');
 		});
 	});
 

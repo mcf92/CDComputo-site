@@ -8,8 +8,11 @@
 }
 
 /*** Navigation Styles ***/
+header {
+	display: flex;
+	justify-content: center;
+}
 .navbar {
-	width: 100vw;
 	height: 160px;
 	display: grid;
 	grid-template-columns: 1fr 3fr;
@@ -19,13 +22,13 @@
 	&.navShadow {
 		box-shadow: 0 4px 30px -5px rgba(#000, 0.2);
 		height: 100px;
+		background: #fff;
 		#word-mark {
 			opacity: 0;
 		}
 	}
 
 	&__brand {
-		padding-left: 40px;
 	  img {
 	    width: 200px;
 	  }
@@ -40,15 +43,15 @@
 	/*** Menu Styles ***/
 	&__menu {
 		justify-content: flex-end;
-		padding-right: 40px;
 	}
 
 	&__list {
 		list-style: none;
 		padding: 0px;
+		justify-content: flex-end;
 	}
 	&__separator {
-		padding: 5px 0px !important;
+		padding: 7px 0px !important;
 		background: #23a0ac;
 	}
 	&__list-item {
@@ -86,7 +89,7 @@
 		}
 		.bar {
 			width: 25px;
-			height: 2px;
+			height: 3px;
 			background-color: $secondary-color;
 			transition: 0.3s ease-in-out;
 			&:nth-child(2) {
@@ -101,7 +104,7 @@
 			.bar {
 				width: 25px;
 				&:first-child {
-					transform: translateY(7px) rotate(45deg);
+					transform: translateY(8px) rotate(45deg);
 				}
 				&:nth-child(2) {
 					transform: scale(0);
@@ -115,6 +118,9 @@
 
 	/*** Responsive Menu For Smaller Device ***/
 	@media screen and (max-width: 1203px) {
+		&.open-menu {
+			background: $white;
+		}
 		&__menu-toggle {
 			display: flex;
 		}
@@ -128,6 +134,7 @@
 			left: 0px;
 			margin: 0;
 			&.showMenu {
+				background: $white;
 				height: 100vh;
 				li {
 					height: 50px;
@@ -148,6 +155,9 @@
 			margin-left: 0;
 			transition: all 0.3s 0.1s;
 			padding: 0px;
+			&:hover {
+				color: $dark;
+			}
 			&:first-child {
 				margin-top: 20px;
 			}

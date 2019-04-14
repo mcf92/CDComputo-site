@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     padding: 0 40px;
     position: relative;
+    button {
+      position: relative;
+      z-index: 1;
+    }
     &-left {
       position: absolute;
       bottom: 0px;

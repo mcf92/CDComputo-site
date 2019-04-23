@@ -4,7 +4,7 @@
   "description": "CDComputo website",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.pug",
+    "start": "parcel index.pug aboutUs.pug",
     "build": "parcel build index.pug --public-url ./ -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

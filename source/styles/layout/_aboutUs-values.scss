@@ -1,0 +1,52 @@
+.about-us {
+  &__values {
+    padding: 90px 0;
+    text-align: center;
+    background: #F4FAFB;
+    &-title {
+      margin: 0 0 30px;
+    }
+    &-description {
+      color: $dark;
+      margin: 0;
+      line-height: 30px;
+    }
+    &-card {
+      background: $white;
+      text-align: center;
+      border-radius: 6px;
+      max-width: 242px;
+      padding: 30px 32px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      i {
+        font-size: 50px;
+      }
+    }
+    &-container {
+      margin-top: 40px;
+    }
+  }
+
+
+  &__team {
+    position: relative;
+    &-bg-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &-bg-right {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &-icon {
+      color: $secondary-color;
+      font-size: 30px;
+    }
+    p {
+      color: $dark;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.about-us {
+  &__banner {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("source/img/aboutUs/aboutUs-banner-bg.png");
+    .row {
+      height: 100%;
+    }
+    &-text {
+      margin-top: 35px;
+    }
+    &-paragraph {
+      margin-top: 57px;
+      position: relative;
+      &:before {
+        content: "";
+        height: 4px;
+        width: 100px;
+        background: #00A1AD;
+        position: absolute;
+        top: -30px;
+      }
+    }
+    &-details {
+      margin-top: 50px;
+      .banner-list {
+        &--item {
+          text-align: center;
+        }
+        &--icon {
+          color: $secondary-color;
+          font-size: 25px;
+        }
+        &--title {
+          font-weight: bold;
+          font-size: 20px;
+          margin: 0;
+        }
+        &--subtitle {
+          font-size: 14px;
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

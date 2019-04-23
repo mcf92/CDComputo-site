@@ -1,5 +1,6 @@
 .clients {
   overflow: hidden;
+  position: relative;
   &__list-names {
     list-style: none;
     margin-top: 60px;
@@ -7,12 +8,17 @@
     height: 80vh;
     max-height: 600px;
     top: 0 !important;
+    display: none;
+    &-container {
+      max-height: 80vh;
+    }
     &-btn {
       color: $secondary-color;
       transform: rotate(-90deg);
       position: absolute;
-      left: -35px;
+      left: -6px;
       bottom: 73px;
+      display: none;
       cursor: pointer;
       i {
         margin-right: 10px;
@@ -37,15 +43,74 @@
       }
     }
   }
+  .owl-nav {
+    text-align: center;
+  }
+  &__owl-carousel {
+    margin: 50px 0 0;
+  }
   &__owl-carousel-item {
     img {
-      width: 20% !important;
+      width: 40% !important;
     }
     h1 {
-      font-size: 48px;
+      font-size: 32px;
     }
     p {
       color: $grey-light;
+    }
+  }
+  @media screen and (min-width: $screen-medium) {
+    &__owl-carousel {
+      margin: 0;
+      &-item {
+        img {
+          width: 20% !important;
+        }
+        h1 {
+          font-size: 48px;
+        }
+      }
+    }
+    &__list-names {
+      display: initial;
+      &-btn {
+        display: initial;
+      }
+    }
+  }
+}
+.owl-carousel {
+  &__buttons {
+    display: initial;
+    text-align: center;
+    .customPreviousBtn {
+      position: absolute;
+      left: 4px;
+      bottom: 50%;
+    }
+    .customNextBtn {
+      position: absolute;
+      right: 4px;
+      bottom: 50%;
+    }
+    button {
+      background: transparent;
+      border: none;
+      width: 30px;
+      height: 30px;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: $grey-super-ligther;
+        border-radius: 50px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-medium) {
+    &__buttons {
+      display: none;
     }
   }
 }

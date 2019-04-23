@@ -20,6 +20,9 @@
 }
 
 .text {
+  &--bold {
+    font-weight: bold;
+  }
   &--primary-icon {
     background: $gradient-icon;
     font-size: $font-size-h2;

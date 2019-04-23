@@ -1,5 +1,5 @@
 .clients.row.middle-xs.container
-  .col-lg-6
+  .col-lg-6.col-md-6.col-sm-6.col-xs-12
     .clients__owl-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag
       .clients__owl-carousel-item(data-hash="sempertex")
         img(src="source/img/clientsLogos/sempertex.png")
@@ -33,7 +33,15 @@
         img(src="source/img/clientsLogos/espriellalawyer.png")
         h1.TechnicalForest-Bold De La Espriella Lawyers
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  .col-lg-6.position--relative
+    .row.middle-xs.TechnicalForest-Regular.margin-top--40
+      span.services__line
+      span Clientes
+  .owl-carousel__buttons
+    button.customPreviousBtn 
+      i.fas.fa-chevron-left
+    button.customNextBtn 
+      i.fas.fa-chevron-right
+  .col-lg-6.col-md-6.col-sm-6.col-xs-12.position--relative.clients__list-names-container
     .TechnicalForest-Bold.clients__list-names-btn
       i.fas.fa-chevron-left
       span mas clientes

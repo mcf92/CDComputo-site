@@ -1,12 +1,12 @@
 .subscription {
-  width: 310px;
-  height: 94px;
+  width: 102%;
+  height: 56px;
   background-color: $secondary-color;
-  padding: 27px 22px;
+  padding: 0 20px;
   position: fixed;
   z-index: 2;
-  bottom: 50px;
-  right: 40px;
+  bottom: 0;
+  right: 0;
   border-radius: 4px;
   color: $white;
   cursor: pointer;
@@ -17,6 +17,16 @@
     font-size: 14px;
   }
   &__icon {
-    font-size: 30px;
+    visibility: hidden;
+  }
+  @media screen and (min-width: $screen-medium) {
+    bottom: 50px;
+    right: 40px;
+    width: 310px;
+    height: 94px;
+    padding: 27px 22px;
+    &__icon {
+      font-size: 30px;
+    }
   }
 }

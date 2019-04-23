@@ -8,6 +8,7 @@
 @import 'source/styles/base/typography';
 @import 'source/styles/base/container';
 @import 'source/styles/base/position';
+@import 'source/styles/base/spacing';
 
 
 // components
@@ -17,7 +18,11 @@
 @import 'source/styles/components/brand-list';
 @import 'source/styles/components/ecommerce-banner';
 @import 'source/styles/components/clients';
+@import 'source/styles/components/footer';
+@import 'source/styles/components/contact-us';
 
 // layout
 @import 'source/styles/layout/home';
 @import 'source/styles/layout/home-services';
+@import 'source/styles/layout/_aboutUs-banner';
+@import 'source/styles/layout/_aboutUs-values';

@@ -34,7 +34,7 @@ header {
 
 	&__brand {
 	  img {
-	    width: 200px;
+	    width: 150px;
 	  }
 	}
 
@@ -169,6 +169,13 @@ header {
 				padding-top: 20px;
 				border-top: 2px solid $secondary-color;
 			}
+		}
+	}
+	@media screen and (min-width: $screen-medium) {
+		&__brand {
+		  img {
+		    width: 200px;
+		  }
 		}
 	}
 }

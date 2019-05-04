@@ -19,34 +19,16 @@
       padding: 30px 32px;
       margin: 0 auto;
       margin-bottom: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+      &:hover {
+        box-shadow: 0 2px 11px 0 rgba(0, 0, 0, .5);
+      }
       i {
         font-size: 50px;
       }
     }
     &-container {
       margin-top: 40px;
-    }
-  }
-
-
-  &__team {
-    position: relative;
-    &-bg-left {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-    &-bg-right {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-    &-icon {
-      color: $secondary-color;
-      font-size: 30px;
-    }
-    p {
-      color: $dark;
     }
   }
 }

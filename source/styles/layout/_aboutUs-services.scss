@@ -1,0 +1,54 @@
+.about-us__services {
+  padding: 90px 0;
+  &-container {
+    margin-top: 70px;
+  }
+  &-services {
+    margin-bottom: 40px;
+    padding: 20px 0;
+    background: $white;
+    border-radius: 6px;
+    box-shadow: 0px 2px 20px 0 rgba(237px, 248px, 255px, 1);
+  }
+  &-link {
+    color: $grey-light;
+    margin-top: 40px;
+    cursor: pointer;
+    i {
+      margin-left: 10px;
+    }
+    &:hover {
+      color: $grey-light;
+    }
+  }
+  &-card {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      margin-bottom: 30px;
+    }
+    p {
+      margin: 0;
+      color: $grey-light;
+    }
+    &:last-child {
+      &:after {
+        content: "";
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      background-color: #e2e2e2;
+      position: absolute;
+      right: 0px;
+      height: 63px;
+      width: 4px;
+      top: 42px;
+      border-radius: 3px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+}

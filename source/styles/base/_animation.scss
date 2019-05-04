@@ -1,0 +1,26 @@
+// FLIP
+.flip-container {
+  -webkit-perspective: 1000;
+  &:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+  }
+  .flipper {
+    -webkit-transition: 0.6s;
+  	-webkit-transform-style: preserve-3d;
+  	position: relative;
+  }
+  .front, .back {
+    width: 100%;
+  	-webkit-backface-visibility: hidden;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  }
+  .front {
+    z-index: 2;
+  }
+  .back {
+    text-align: center;
+    -webkit-transform: rotateY(180deg);
+  }
+}

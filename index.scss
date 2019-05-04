@@ -9,6 +9,8 @@
 @import 'source/styles/base/container';
 @import 'source/styles/base/position';
 @import 'source/styles/base/spacing';
+@import 'source/styles/base/animation';
+@import 'source/styles/base/display';
 
 
 // components
@@ -24,5 +26,9 @@
 // layout
 @import 'source/styles/layout/home';
 @import 'source/styles/layout/home-services';
-@import 'source/styles/layout/_aboutUs-banner';
-@import 'source/styles/layout/_aboutUs-values';
+@import 'source/styles/layout/aboutUs-banner';
+@import 'source/styles/layout/aboutUs-values';
+@import 'source/styles/layout/about_us-team';
+@import 'source/styles/layout/aboutUs-services';
+@import 'source/styles/layout/services';
+@import 'source/styles/layout/gamers-banner';

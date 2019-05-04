@@ -1,0 +1,14 @@
+.display {
+  &--mobile {
+    display: none;
+    @media screen and (max-width: $screen-large) {
+      display: unset;
+    }
+  }
+  &--desktop {
+    display: none;
+    @media screen and (min-width: $screen-large) {
+      display: unset;
+    }
+  }
+}

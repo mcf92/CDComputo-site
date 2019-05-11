@@ -1,4 +1,4 @@
-.clients.row.middle-xs.container
+.clients.row.middle-xs.container(data-aos="fade-up")
   .col-lg-6.col-md-6.col-sm-6.col-xs-12
     .clients__owl-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag
       .clients__owl-carousel-item(data-hash="sempertex")
@@ -42,23 +42,25 @@
     button.customNextBtn 
       i.fas.fa-chevron-right
   .col-lg-6.col-md-6.col-sm-6.col-xs-12.position--relative.clients__list-names-container
-    .TechnicalForest-Bold.clients__list-names-btn
+    .TechnicalForest-Bold.clients__list-names-btn.customNamesNextBtn
       i.fas.fa-chevron-left
       span mas clientes
-    ul.clients__list-names
-      li.item 
-        a(href="#sempertex") Sempertex
-      li.item 
-        a(href="#marval") Marval
-      li.item 
-        a(href="#norte") Universidad Del Norte
-      li.item 
-        a(href="#g.atlantico") Gobernación Del Atlántico
-      li.item 
-        a(href="#policia") Policia Metropolitana De Barranquilla
-      li.item 
-        a(href="#alcaldia") Alcaldia De Barranquilla
-      li.item 
-        a(href="#electricaribe") Electricaribe
-      li.item 
-        a(href="#espriellaLawyers") De La Espriella Lawyers
+    .clients-names__owl-carousel.owl-carousel.owl-theme.owl-loaded.owl-drag
+      ul.clients__list-names
+        li.item 
+          a(href="#sempertex") Sempertex
+        li.item 
+          a(href="#marval") Marval
+        li.item 
+          a(href="#norte") Universidad Del Norte
+        li.item 
+          a(href="#g.atlantico") Gobernación Del Atlántico
+      ul.clients__list-names
+        li.item 
+          a(href="#policia") Policia Metropolitana De Barranquilla
+        li.item 
+          a(href="#alcaldia") Alcaldia De Barranquilla
+        li.item 
+          a(href="#electricaribe") Electricaribe
+        li.item 
+          a(href="#espriellaLawyers") De La Espriella Lawyers

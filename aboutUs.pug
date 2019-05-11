@@ -1,7 +1,10 @@
+include ./source/mixin/head.pug
+
 doctype html
 html
-  include ./source/includes/shared/head.pug
+  +head('CDCOMPUTO - CONOCENOS', 'testing')
   body
+    include ./source/includes/shared/page-spinner.pug
     include ./source/includes/shared/navbar.pug
     include ./source/includes/shared/subscriptionList.pug
     include ./source/includes/aboutUs/banner.pug
@@ -9,4 +12,4 @@ html
     include ./source/includes/aboutUs/team.pug
     include ./source/includes/aboutUs/services.pug
     include ./source/includes/shared/footer.pug
-    script(type="text/javascript" src="index.js")
+    include ./source/includes/shared/scripts.pug

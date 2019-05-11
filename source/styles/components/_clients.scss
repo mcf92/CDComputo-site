@@ -16,7 +16,7 @@
       color: $secondary-color;
       transform: rotate(-90deg);
       position: absolute;
-      left: -6px;
+      left: -66px;
       bottom: 73px;
       display: none;
       cursor: pointer;
@@ -42,6 +42,9 @@
         }
       }
     }
+  }
+  .owl-item {
+    overflow: hidden;
   }
   .owl-nav {
     text-align: center;

@@ -1,0 +1,79 @@
+.gamers {
+  &__bg-title {
+    font-size: 150px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #f1f1f1;
+  }
+  &__container {
+    position: relative;
+  }
+  &__characters {
+    display: initial;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+  &__carousel {
+    background: linear-gradient(to right bottom, #f7f7f7, #ffffff);
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+    @media screen and (min-width: $screen-medium) {
+      padding-top: 100px;
+      background-image: url("source/img/gamers/game-over-2.png");
+    }
+    &-item {
+      height: 100vh;
+      padding-top: 75px;
+      @media screen and (min-width: $screen-medium) {
+        padding-top: 100px;
+      }
+    }
+  }
+  &__brand {
+    &-products {
+      margin-top: 30px;
+      b {
+        padding-left: 9px;
+      }
+      hr {
+        border: 1px solid #24a1ad;
+      }
+      &-price {
+        padding: 0 6px;
+      }
+      &-list {
+        margin-top: 20px;
+      }
+    }
+    &-title {
+      margin-top: 35px;
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+    &-description {
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+    &-logo {
+      position: relative;
+      img {
+        width: 100px;
+      }
+      &:after {
+        content: "";
+        bottom: -21px;
+        left: 10px;
+        width: 50px;
+        height: 5px;
+        border-radius: 30px;
+        position: absolute;
+        background-color: #00A1AD;
+      }
+    }
+  }
+}

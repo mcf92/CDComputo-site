@@ -1,13 +1,18 @@
+- var brands = ['source/img/brandLogos/sony_logo.png', 'source/img/brandLogos/sony_logo.png', 'source/img/brandLogos/sony_logo.png', 'source/img/brandLogos/sony_logo.png', 'source/img/brandLogos/sony_logo.png']
+include ./source/mixin/head.pug
+include ./source/mixin/brandList.pug
+
 doctype html
 html
-  include ./source/includes/shared/head.pug
+  +head('CDCOMPUTO', 'testing')
   body
+    include ./source/includes/shared/page-spinner.pug
     include ./source/includes/shared/navbar.pug
     include ./source/includes/shared/subscriptionList.pug
     include ./source/includes/home/banner.pug
-    include ./source/includes/home/brandList.pug
+    +brandList('Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod', brands)
     include ./source/includes/home/services.pug
     include ./source/includes/home/ecommerceBanner.pug
     include ./source/includes/home/clients.pug
     include ./source/includes/shared/footer.pug
-    script(type="text/javascript" src="index.js")
+    include ./source/includes/shared/scripts.pug

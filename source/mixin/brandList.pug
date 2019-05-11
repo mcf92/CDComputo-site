@@ -1,0 +1,9 @@
+mixin brandList(text, brands)
+  .brand-list.row.container
+      .col-lg-3.col-md-3.col-sm-12.col-xs-12.brand-list__separator
+        p= text
+      .col-lg-9.col-md-9.col-sm-12.col-xs-12.row.middle-xs.center-xs
+        .brand-list__logos
+          each val in brands
+            img(src=val)
+          

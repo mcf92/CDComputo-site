@@ -1,0 +1,38 @@
+mixin item(items)
+  each val in items
+    div.gamers__carousel-item(id='gamers__carousel-' + val.brand)
+      .container
+        .row.gamers__container
+          .col-lg-6.col-md-6.col-sm-12.colxs-12
+            .gamers__brand-logo
+              img(src="source/img/gamers/brands/" + val.brand + ".png")
+            h3.gamers__brand-title.TechnicalForest-Bold= val.title
+            div
+              p.gamers__brand-description= val.description
+              button.btn.btn-outline--secondary 
+                span Compra en línea 
+                i.fas.fa-angle-right
+            .col-lg-12.row.middle-xs.gamers__brand-products
+              b Lorem Ipsum
+              .col-xs-7 
+                hr
+              .col-xs-12.row.gamers__brand-products-list
+                .col-lg-3.col-md-3.col-sm-4.col-xs-4
+                  img(src="source/img/gamers/products/" + val.brand + "-1.png" width='100%' data-aos="zoom-in")
+                  .row.between-xs.middle-xs.gamers__brand-products-price
+                    div $60.000
+                    i.fas.fa-arrow-right
+                .col-lg-3.col-md-3.col-sm-4.col-xs-4
+                  img(src="source/img/gamers/products/" + val.brand + "-2.png" width='100%' data-aos="zoom-in" data-aos-delay='100')
+                  .row.between-xs.middle-xs.gamers__brand-products-price
+                    div $60.000
+                    i.fas.fa-arrow-right
+                .col-lg-3.col-md-3.col-sm-4.col-xs-4
+                  img(src="source/img/gamers/products/" + val.brand + "-3.png" width='100%' data-aos="zoom-in" data-aos-delay='200')
+                  .row.between-xs.middle-xs.gamers__brand-products-price
+                    div $60.000
+                    i.fas.fa-arrow-right
+          .col-lg-6.col-md-6.gamers__characters
+            img(src="source/img/gamers/characters/" + val.brand + ".png" width='80%' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500")
+        
+      

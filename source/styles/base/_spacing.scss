@@ -13,3 +13,16 @@
 .margin--flush {
   margin: 0;
 }
+
+.padding {
+  &--horizontal {
+    &-tiny {
+      padding: 0 15px;
+    }
+  }
+  &--bottom {
+    &-50 {
+      padding-bottom: 50px;
+    }
+  }
+}

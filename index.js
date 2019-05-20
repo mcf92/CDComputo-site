@@ -16,6 +16,7 @@ import './source/js/owl-carousel';
 $('body').css('max-height','100vh');
 $('body').css('overflow','hidden');
 $(window).on('load', function() {
+  AOS.refresh();
   setTimeout(function(){
     $('.page-spinner').fadeOut();
     $('.spinner').fadeOut();

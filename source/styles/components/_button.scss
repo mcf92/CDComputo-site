@@ -4,6 +4,17 @@
   text-decoration: none;
   font-family: $font-family-secondary;
   transition: .4s all;
+  &-solid--secondary {
+    color: white;
+    padding: 6px 12px;
+    background: $secondary-color;
+    border: none;
+    border-radius: 40px;
+    &:hover {
+      background: $secondary-color-hover;
+      color: $white;
+    }
+  }
   &-outline--secondary {
     color: $secondary-color;
     padding: 6px 12px;

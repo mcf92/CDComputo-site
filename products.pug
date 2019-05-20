@@ -1,0 +1,17 @@
+include ./source/mixin/head.pug
+include ./source/includes/products/data.pug
+include ./source/includes/products/banner.pug
+include ./source/includes/products/body.pug
+
+doctype html
+html
+  +head('CDCOMPUTO - Productos', 'testing')
+  body
+    include ./source/includes/shared/page-spinner.pug
+    include ./source/includes/shared/navbar.pug
+    include ./source/includes/shared/subscriptionList.pug
+    +productsBanner(productsItems)
+    +productbody(productsItems)
+    include ./source/includes/shared/footer.pug
+    include ./source/includes/shared/scripts.pug
+    script(type="text/javascript" src="./source/js/productsTabs.js")

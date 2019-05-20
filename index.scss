@@ -11,6 +11,7 @@
 @import 'source/styles/base/spacing';
 @import 'source/styles/base/animation';
 @import 'source/styles/base/display';
+@import 'source/styles/base/background';
 
 
 // components
@@ -23,6 +24,7 @@
 @import 'source/styles/components/footer';
 @import 'source/styles/components/contact-us';
 @import 'source/styles/components/page-spinner';
+@import 'source/styles/components/tabs';
 
 // layout
 @import 'source/styles/layout/home';
@@ -34,3 +36,4 @@
 @import 'source/styles/layout/services';
 @import 'source/styles/layout/gamers-banner';
 @import 'source/styles/layout/gamers-carousel';
+@import 'source/styles/layout/products';

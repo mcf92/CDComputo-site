@@ -21,6 +21,7 @@ $(document).ready(function(){
   });
 });
 
+// clients names
 $(document).ready(function(){
   $('.clients-names__owl-carousel').owlCarousel({
     items: 1,
@@ -38,4 +39,21 @@ $(document).ready(function(){
   $('.customNamesNextBtn').click(function() {
       owl.trigger('next.owl.carousel');
   });
+});
+
+
+// products type
+$(document).ready(function(){
+  $('.products-type__owl-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp',
+    center: true,
+    URLhashListener: true,
+    startPosition: 'URLHash'
+  });
+
+  var owl = $('.products-type__owl-carousel');
+  owl.owlCarousel();
 });

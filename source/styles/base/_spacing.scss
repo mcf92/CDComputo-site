@@ -1,17 +1,26 @@
-.margin-top--40 {
-  margin-top: 40px;
-}
-
-.margin-top--20 {
-  margin-top: 20px;
-}
-
-.margin-bottom--20 {
-  margin-top: 20px;
-}
-
-.margin--flush {
-  margin: 0;
+.margin {
+  &--flush {
+    margin: 0;
+  }
+  &-bottom {
+    &--20 {
+      margin-bottom: 20px;
+    }
+    &--200 {
+      margin-bottom: 200px;
+    }
+  }
+  &-top {
+    &--40 {
+      margin-top: 40px;
+    }
+    &--20 {
+      margin-top: 20px;
+    }
+    &--100 {
+      margin-top: 100px;
+    }
+  }
 }
 
 .padding {

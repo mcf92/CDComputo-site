@@ -57,3 +57,19 @@ $(document).ready(function(){
   var owl = $('.products-type__owl-carousel');
   owl.owlCarousel();
 });
+
+// products categories
+$(document).ready(function(){
+  $('.products-categories__owl-carousel').owlCarousel({
+    items: 5,
+    loop: true,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp',
+    center: true,
+    URLhashListener: true,
+    startPosition: 'URLHash'
+  });
+
+  var owl = $('.products-categories__owl-carousel');
+  owl.owlCarousel();
+});

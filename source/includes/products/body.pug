@@ -1,4 +1,4 @@
-mixin productbody(productsItems)
+mixin productbody(productsItems, carouselItems)
   each item, index in productsItems
     .tabs-content.products__body(class='tab-' + (index + 1))
       .bg--grey
@@ -6,8 +6,8 @@ mixin productbody(productsItems)
           each brand, index in item.brands
             li.products__body-brands-item.col-xs-3
               img(src='./source/img/products/brand/' + brand + '.png' data-aos="zoom-in")
-      .products__body-container.container
-        .row.center-xs.middle-xs
+      .products__body-container
+        .container.row.center-xs.middle-xs
           .col-xs-6
             h1.TechnicalForest-Bold=item.body.title
             .col-xs-8.container--center
@@ -16,12 +16,42 @@ mixin productbody(productsItems)
               span Compra en línea 
               i.fas.fa-angle-right
           .col-xs-12.row.center-xs.products__body-products
-            .col-xs-7.row
-              each product, index in item.body.products
-                .col-lg-4.col-md-4.col-sm-6.col-xs-12.padding--horizontal-tiny.padding--bottom-50
-                  .bg--shadow.bg--white(data-aos="zoom-in")
-                    img(src='./source/img/products/' + product.img + '.png' width='100%' data-aos="zoom-in")
-                  .products__body-container-price
-                    p=product.price
-                    i.fas.fa-arrow-right
+          .col-xs-7.row.margin-bottom--200
+            each product, index in item.body.products
+              .col-lg-4.col-md-4.col-sm-6.col-xs-12.padding--horizontal-tiny.padding--bottom-50
+                .bg--shadow.bg--white(data-aos="zoom-in")
+                  img(src='./source/img/products/' + product.img + '.png' width='100%' data-aos="zoom-in")
+                .products__body-container-price
+                  p=product.price
+                  i.fas.fa-arrow-right
+        .bg--dark.position--relative
+            img.products__body-video--bg.left(src='./source/img/products/products-video-bg.png' data-aos="fade-up" data-aos-delay="100")
+            img.products__body-video--bg.right(src='./source/img/products/products-video-bg--left.png' data-aos="fade-up" data-aos-delay="100")
+            .container.position--relative
+              .col-xs-12.products__body-video-container
+                  .row.center-xs
+                    .col-xs-6
+                      .products__body-video(data-aos="zoom-in" )
+                        iframe(width="424" height="238" src="https://www.youtube.com/embed/rWyZOUpKqY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .col-xs-12.products__body-categories
+              .container
+                .row.products-categories__container
+                  h1.TechnicalForest-Bold Compra por Categoria
+                  .products-categories.col-xs-12
+                    each categorie in carouselItems
+                      .products-categories__item
+                        .row
+                          .col-xs-6.center-xs
+                            img(src='./source/img/products/' + categorie.img + '.png' width='55%')
+                          .col-xs-6
+                            h2.TechnicalForest-Bold= categorie.title
+                            p= categorie.description
+                            .row.end-xs
+                              button.btn.btn-outline--circle-secondary
+                                i.fas.fa-arrow-right
+                  .products-categories__scroll
+                    i.fas.fa-arrow-left.products-categories__scroll-left
+                    p SCROLL
+                    i.fas.fa-arrow-right.products-categories__scroll-right
+                    
                   

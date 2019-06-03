@@ -1,24 +1,25 @@
 mixin productsBanner(productsItems)
-  .products__banner.row
-    .col-lg-4.col-md-4.col-sm-4.col-xs-12.bg--secondary
-      ul.products__types.tabs
-        li.item.tabs-link.current(data-tab="tab-1")
-          a Parlantes
-        li.item.tabs-link(data-tab="tab-2")
-          a Subwoofer
-        li.item.tabs-link(data-tab="tab-3")
-          a Proyectores
-        li.item.tabs-link(data-tab="tab-4")
-          a Monitores
-        li.item.tabs-link(data-tab="tab-5")
-          a Televisores
-    .col-lg-8.col-md-8.col-sm-8.col-xs-12.position--relative.bg--grey
-      each item, index in productsItems
-        .tabs-content(class='tab-' + (index + 1))
-          img.products__banner-img(src='./source/img/products/' + item.img + '.png')
-          .products__banner-titles
-            h1.TechnicalForest-Bold=item.title
-            p=item.description
-            button.btn.btn-solid--secondary
-              span Compra en línea 
-              i.fas.fa-angle-right
+  .products__banner.col-xs-12
+    .row
+      .col-lg-4.col-md-4.col-sm-4.col-xs-12.bg--secondary
+        ul.products__types.tabs
+          li.item.tabs-link.current(data-tab="tab-1")
+            a Parlantes
+          li.item.tabs-link(data-tab="tab-2")
+            a Subwoofer
+          li.item.tabs-link(data-tab="tab-3")
+            a Proyectores
+          li.item.tabs-link(data-tab="tab-4")
+            a Monitores
+          li.item.tabs-link(data-tab="tab-5")
+            a Televisores
+      .col-lg-8.col-md-8.col-sm-8.col-xs-12.position--relative.bg--grey
+        each item, index in productsItems
+          .tabs-content(class='tab-' + (index + 1))
+            img.products__banner-img(src='./source/img/products/' + item.img + '.png')
+            .products__banner-titles
+              h1.TechnicalForest-Bold=item.title
+              p=item.description
+              button.btn.btn-solid--secondary
+                span Compra en línea 
+                i.fas.fa-angle-right

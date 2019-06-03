@@ -1,4 +1,4 @@
-mixin productsBanner(productsItems)
+mixin productsBanner(products)
   .products__banner.col-xs-12
     .row
       .col-lg-4.col-md-4.col-sm-4.col-xs-12.bg--secondary
@@ -14,7 +14,7 @@ mixin productsBanner(productsItems)
           li.item.tabs-link(data-tab="tab-5")
             a Televisores
       .col-lg-8.col-md-8.col-sm-8.col-xs-12.position--relative.bg--grey
-        each item, index in productsItems
+        each item, index in products
           .tabs-content(class='tab-' + (index + 1))
             img.products__banner-img(src='./source/img/products/' + item.img + '.png')
             .products__banner-titles

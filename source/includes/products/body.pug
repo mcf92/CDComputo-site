@@ -9,9 +9,9 @@ mixin productbody(productsItems, carouselItems)
       .products__body-container
         .container.row.center-xs.middle-xs
           .col-xs-6
-            h1.TechnicalForest-Bold=item.body.title
+            h1.TechnicalForest-Bold Marcas con respaldo
             .col-xs-8.container--center
-              p.products__body-container-paragraph=item.body.description
+              p.products__body-container-paragraph Encuentra en CD Cómputo las principales marcas en tecnología
             button.btn.btn-outline--secondary 
               span Compra en línea 
               i.fas.fa-angle-right
@@ -36,7 +36,7 @@ mixin productbody(productsItems, carouselItems)
             .col-xs-12.products__body-categories
               .container
                 .row.products-categories__container
-                  h1.TechnicalForest-Bold Compra por Categoria
+                  h1.TechnicalForest-Bold Busca otras marcas en esta categoría
                   .products-categories.col-xs-12
                     each categorie in carouselItems
                       .products-categories__item

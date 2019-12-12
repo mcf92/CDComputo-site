@@ -38,9 +38,12 @@
       bottom: 30px;
       font-size: 20px;
       color: $primary-color;
+      z-index: 2;
       a {
         cursor: pointer;
         padding: 10px;
+        color: $primary-color;
+        text-decoration: none;
       }
     }
   }

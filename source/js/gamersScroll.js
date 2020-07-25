@@ -1,7 +1,7 @@
 if(window.location.pathname === '/gamers.html') {
   function ScrollHandler(pageId) {
     var page = $('#' + pageId);
-    var pageStart = page.offset().top - 50;
+    var pageStart = page.offset().top - 90;
     var pageJump = false;
 
     function scrollToPage() {
@@ -44,9 +44,9 @@ if(window.location.pathname === '/gamers.html') {
     });
   }
   var items = [
-    {brand: 'sony', title: 'Lorem ipsum sit ame.', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
-    {brand: 'nintendo', title: 'Lorem ipsum sit ame.', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
-    {brand: 'playStation', title: 'Lorem ipsum sit ame.', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {brand: 'logitech', title: 'science Wins', description: 'Compañía suiza centrada en la innovación y la calidad, Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas.'},
+    {brand: 'trust', title: 'la marca n.º 1 en relación calidad/precio.', description: 'Trust es la marca n.º 1 en relación calidad/precio en el sector de accesorios digitales. Tenemos una gama enormemente amplia y en ella encontrará todo lo que pueda imaginar para su tablet, equipo de sobremesa o portátil, sistema de videojuegos, smartphone, televisor.'},
+    {brand: 'amd', title: 'La Computación de Alto Rendimiento está Transformando Nuestras Vidas.', description: 'AMD desarrolla productos de procesamiento y visualización de alto rendimiento para hacer frente a algunos de los desafíos más difíciles e interesantes del mundo.'},
   ];
 
   items.map((item) => (

@@ -8,7 +8,7 @@ mixin productbody(productsItems, carouselItems)
               img(src='./source/img/products/brand/' + brand + '.png' data-aos="zoom-in")
       .products__body-container
         .container.row.center-xs.middle-xs
-          .col-xs-6
+          .col-lg-6.col-md-6.col-sm-12.col-xs-12
             h1.TechnicalForest-Bold Marcas con respaldo
             .col-xs-8.container--center
               p.products__body-container-paragraph Encuentra en CD Cómputo las principales marcas en tecnología
@@ -16,9 +16,9 @@ mixin productbody(productsItems, carouselItems)
               span Compra en línea 
               i.fas.fa-angle-right
           .col-xs-12.row.center-xs.products__body-products
-          .col-xs-7.row.margin-bottom--200
+          .col-lg-7.col-md-7.col-sm-12.col-xs-12.row.margin-bottom--200
             each product, index in item.body.products
-              .col-lg-4.col-md-4.col-sm-6.col-xs-12.padding--horizontal-tiny.padding--bottom-50
+              .col-lg-4.col-md-4.col-sm-4.col-xs-6.padding--horizontal-tiny.padding--bottom-50
                 .bg--shadow.bg--white(data-aos="zoom-in")
                   img(src='./source/img/products/' + product.img + '.png' width='100%' data-aos="zoom-in")
                 .products__body-container-price
@@ -30,28 +30,24 @@ mixin productbody(productsItems, carouselItems)
             .container.position--relative
               .col-xs-12.products__body-video-container
                   .row.center-xs
-                    .col-xs-6
+                    .col-lg-6.col-md-6.col-sm-12.col-xs-12
                       .products__body-video(data-aos="zoom-in" )
                         iframe(width="424" height="238" src="https://www.youtube.com/embed/rWyZOUpKqY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
             .col-xs-12.products__body-categories
               .container
                 .row.products-categories__container
                   h1.TechnicalForest-Bold Busca otras marcas en esta categoría
-                  .products-categories.col-xs-12
+                  .products-sub-categories__owl-carousel.products-categories.col-xs-12.owl-carousel.owl-theme
                     each categorie in carouselItems
-                      .products-categories__item
+                      .products-categories__item.item
                         .row
                           .col-xs-6.center-xs
-                            img(src='./source/img/products/' + categorie.img + '.png' width='55%')
+                            img(src='./source/img/products/' + categorie.img + '.png' width='40%')
                           .col-xs-6
-                            h2.TechnicalForest-Bold= categorie.title
+                            h3.TechnicalForest-Bold= categorie.title
                             p= categorie.description
                             .row.end-xs
                               button.btn.btn-outline--circle-secondary
                                 i.fas.fa-arrow-right
-                  .products-categories__scroll
-                    i.fas.fa-arrow-left.products-categories__scroll-left
-                    p SCROLL
-                    i.fas.fa-arrow-right.products-categories__scroll-right
                     
                   

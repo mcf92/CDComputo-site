@@ -1,7 +1,17 @@
 mixin productsBanner(products)
   .products__banner.col-xs-12
     .row
-      .col-lg-4.col-md-4.col-sm-4.col-xs-12.bg--secondary
+      .col-lg-4.col-md-4.col-sm-4.col-xs-12.bg--secondary.products__banner-list
+        .products__banner-titles
+          h1.TechnicalForest-Bold ¿Buscando lo mejor en tecnología?
+          p Encuéntralo aquí.
+          .center-xs
+            button.btn.btn-solid--primary
+              span Compra en línea 
+              i.fas.fa-angle-right
+          each item, index in products
+            .tabs-content(class='tab-' + (index + 1))
+              img.products__banner-img(src='./source/img/products/' + item.img + '.png')
         ul.products__types.tabs
           li.item.tabs-link.current(data-tab="tab-1")
             a Computadores
@@ -23,7 +33,7 @@ mixin productsBanner(products)
             a Almacenamiento y Accesorios
           li.item.tabs-link(data-tab="tab-10")
             a Línea corporativa
-      .col-lg-8.col-md-8.col-sm-8.col-xs-12.position--relative.bg--grey
+      .col-lg-8.col-md-8.col-sm-8.col-xs-12.position--relative.bg--grey.products__banner-image
         each item, index in products
           .tabs-content(class='tab-' + (index + 1))
             img.products__banner-img(src='./source/img/products/' + item.img + '.png')

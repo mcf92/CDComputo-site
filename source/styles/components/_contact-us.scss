@@ -2,6 +2,12 @@
 .contact-us {
   color: $white;
   background: #001D2C;
+  a {
+    &:hover, &:focus {
+      color: white;
+    }
+    color: white;
+  }
   .container {
     position: relative;
     padding-top: 60px;
@@ -14,7 +20,7 @@
     font-size: 14px;
     padding: 10px 40px;
   }
-  .fa-address-card {
+  .fa-whatsapp {
     font-size: 30px;
   }
   h3 {
@@ -35,23 +41,22 @@
     height: 15px;
     width: 15px;
     z-index: 3;
-    bottom: 181px;
-    left: 234px;
+    bottom: 198px;
+    right: 234px;
     animation: pulse 1.5s infinite;
-    // animation: 1.6s playShadow ease-out infinite;
     cursor: pointer;
     &-text {
       position: absolute;
       color: $secondary-color;
       z-index: 3;
-      bottom: 210px;
-      left: 210px;
+      bottom: 220px;
+      right: 207px;
       font-weight: bold;
     }
   }
   &__bg {
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 0;
     height: 100%;
     &-overlay {
@@ -65,7 +70,7 @@
     }
   }
   &__title {
-    font-size: 60px;
+    font-size: 40px;
     margin: 0;
   }
   &__map {
@@ -73,7 +78,7 @@
     overflow: hidden;
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 350px;
     z-index: 3;
     display: none;
@@ -170,11 +175,11 @@
 
     &__bg {
       &-overlay {
-        background-image: radial-gradient(300px 418px ellipse at 28% 47%, rgba(0, 56, 87, 0.7) 10%, #001D2C 69%);
+        background-image: radial-gradient(300px 418px ellipse at 81% 47%, rgba(0, 56, 87, 0.7) 10%, #001D2C 69%);
       }
     }
     &__title {
-      font-size: 40px;
+      font-size: 60px;
     }
     p {
       padding-right: 30px;

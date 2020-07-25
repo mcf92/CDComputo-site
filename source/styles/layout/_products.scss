@@ -1,11 +1,6 @@
 .products {
   overflow: hidden;
   &-categories {
-    overflow-y: scroll;
-    padding-bottom: 20px;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
     &__scroll {
       display: none;
       display: flex;
@@ -22,6 +17,14 @@
     }
     &__container {
       overflow: hidden;
+      .fa-arrow-right {
+        margin-left: 20px;
+      }
+      .owl-next, .owl-prev {
+        &:hover, &:focus {
+          outline: none;
+        }
+      }
     }
     &__item {
       background-color: #000;
@@ -30,19 +33,32 @@
       border-radius: 3px;
       box-shadow: 0 2px 4px 0 #000;
       display: inline-block;
-      width: 400px;
       button {
         margin-right: 33px;
       }
       p {
+        font-size: 12px;
         white-space: normal;
       }
     }
   }
   &__banner {
+    height: unset;
     margin-top: 98px;
     .row {
-      height: 90vh;
+      height: unset;
+    }
+    &-list {
+      .products__banner-titles {
+        display: initial;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 30px;
+      }
+    }
+    &-image {
+      display: none;
     }
     &-titles {
       padding-left: 14%;
@@ -51,11 +67,11 @@
         margin-top: 20px;
       }
       h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin: 0;
       }
       p {
-        font-size: 30px;
+        font-size: 22px;
         margin: 10px 0 0;
       }
     }
@@ -65,9 +81,10 @@
     .tabs-content {
       margin-top: 79px;
       img {
+        margin-top: 46px;
         position: absolute;
-        left: -15%;
-        width: 30%;
+        right: -22%;
+        width: 44%;
       }
     }
   }
@@ -75,7 +92,7 @@
     list-style: none;
     font-weight: bold;
     font-size: 20px;
-    margin-top: 115px;
+    margin-top: 54px;
     .item {
       margin-bottom: 20px;
       color: $secondary-color-hover;
@@ -87,7 +104,7 @@
       color: #fff;
     }
     &-video {
-      top: -30%;
+      top: -60px;
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 25px;
@@ -112,7 +129,6 @@
       }
       &-container {
         position: relative;
-        height: 50vh;
       }
     }
     &-products {
@@ -142,6 +158,47 @@
         img {
           width: 100%;
           max-width: 200px;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 550px) {
+    &__banner {
+      height: 100vh;
+      .row {
+        height: 100vh;
+      }
+    }
+  }
+  @media only screen and (min-width: 48em) {
+    &__body-video {
+      top: -102px;
+    }
+    &__types {
+      margin-top: 115px;
+    }
+    &__banner {
+      &-image {
+        display: initial;
+      }
+      &-titles {
+        h1 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+      .tabs-content {
+        img {
+          margin: 0;
+          left: -15%;
+          width: 30%;
+        }
+      }
+      &-list {
+        .products__banner-titles {
+          display: none;
         }
       }
     }

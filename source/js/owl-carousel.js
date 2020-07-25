@@ -73,3 +73,25 @@ $(document).ready(function(){
   var owl = $('.products-categories__owl-carousel');
   owl.owlCarousel();
 });
+
+
+$('.products-sub-categories__owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText : ["<i class='fa fa-arrow-left'></i>","<i class='fa fa-arrow-right'></i>"],
+  responsive: {
+    0:{
+      items: 1,
+    },
+    560: {
+      items: 2,
+    },
+    1010: {
+      items: 3,
+    },
+    1200:{
+      items: 4,
+    }
+  }
+})

@@ -15,6 +15,17 @@
       color: $white;
     }
   }
+  &-solid--primary {
+    color: white;
+    padding: 6px 12px;
+    background: $primary-color;
+    border: none;
+    border-radius: 40px;
+    &:hover {
+      background: $primary-color-dark;
+      color: $white;
+    }
+  }
   &-outline--circle-secondary {
     color: $secondary-color;
     padding: 6px 6px;

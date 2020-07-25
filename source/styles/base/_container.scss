@@ -4,7 +4,19 @@
   &--center {
     margin: 0 auto;
   }
+  @media only screen and (min-width: 48em) {
+    width: 44rem;
+  }
   @media screen and (min-width: 49em) {
     padding: 0;
+  }
+  @media only screen and (min-width: 49em) {
+    width: 44rem;
+  }
+  @media only screen and (min-width: 66em) {
+    width: 65rem;
+  }
+  @media only screen and (min-width: 70em) {
+    width: 70rem;
   }
 }
